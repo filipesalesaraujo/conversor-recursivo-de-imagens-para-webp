@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Conversor Recursivo de Imagens para WebP</title>
+    <style>
+        body {
+            background: #000;
+            font-family: 'Arial';
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 20px;
+            padding: 20px;
+        }
+
+        .title {
+            background: linear-gradient(180deg, #fff, #adadad);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            font-weight: 800;
+            font-size: max(48px, min(5vw, 76px));
+            line-height: 1;
+            letter-spacing: -.05em;
+            padding: 24px;
+            position: relative;
+            text-align: center;
+        }
+
+        .input-button {
+            display: flex;
+            gap: 20px;
+        }
+
+        .label-container {
+            color: #fff;
+        }
+        .label-container input[type="file"]{
+            display: none;
+        }
+        .label-container input[type="file"],
+        .success,
+        .error,
+        .info {
+            border: 0;
+            border-radius: 100px;
+            padding: 5px;
+            text-align: center;
+            font-size: 14px;
+        }
+
+        .success {
+            color: #449d5d;
+            background: #449d5d25;
+        }
+
+        .error {
+            color: #FF0000;
+            background: #FF000025;
+        }
+
+        .info {
+            color: #3b88e9;
+            background: #3b88e925;
+        }
+
+        .label-container label,
+        .convert-button {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border: 0;
+            border-radius: 8px;
+            font-weight: 500;
+            height: 48px;
+            max-width: 100%;
+            cursor: pointer;
+            transition: 0.3s ease-in-out;
+            font-size: 18px;
+            padding: 0 12px;
+        }
+
+        .label-container label {
+            background-color: #0a0a0a;
+            border: 1px solid hsla(0, 0%, 100%, .14);
+            color: white;
+        }
+
+        .label-container label:hover,
+        .convert-button:hover {
+            opacity: 0.8;
+        }
+
+        .convert-button {
+            background-color: #fff;
+            color: #000;
+        }
+
+        .path {
+            color: #888;
+            width: fit-content;
+            font-size: 13px;
+            letter-spacing: .1rem;
+        }
+        .by{
+            color: #888;
+            font-size: 14px;
+            text-decoration: none;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1 class="title">Conversor Recursivo de Imagens para WebP</h1>
+
+    <div class="input-button">
+        <div class="label-container">
+            <input type="file" id="filePickerSrc" webkitdirectory>
+            <label for="filePickerSrc">Escolha a pasta</label>
+        </div>
+
+        <button id="convertButton" class="convert-button">Converter</button>
+    </div>
+
+    <p id="pathDisplay" class="path"></p>
+
+    <p id="status" class="status"></p>
+
+    <a class="by" href="https://filipesalesaraujo.com/" id="websiteLink">Desenvolvido por <strong>filipesalesaraujo.com</strong></a>
+
+    <script src="renderer.js"></script>
+</body>
+
+</html>
