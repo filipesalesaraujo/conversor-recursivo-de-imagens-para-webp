@@ -1,0 +1,14 @@
+{
+    "name": "recursive-image-to-webp-converter",
+    "version": "1.0.0",
+    "description": "Converte recursivamente imagens para o formato WEBP",
+    "main": "convert.js",
+    "scripts": {
+      "start": "node convert.js"
+    },
+    "license": "MIT",
+    "dependencies": {
+      "sharp": "^0.28.3"
+    }
+  }
+  
