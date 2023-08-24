@@ -5,13 +5,13 @@
   "scripts": {
     "start": "electron .",
     "pack": "electron-builder --dir",
-    "dist": "electron-builder"
+    "dist": "electron-builder && node zip-output.js"
   },
   "build": {
     "appId": "com.conversorrecursivodeimagensparawebp",
     "productName": "Conversor Recursivo de Imagens para WebP",
     "directories": {
-      "output": "release-builds"
+      "output": "build/${name}-${version}"
     },
     "files": [
       "**/*",
