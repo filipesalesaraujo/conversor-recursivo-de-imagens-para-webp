@@ -49,7 +49,7 @@
   },
   "devDependencies": {
     "archiver": "^6.0.0",
-    "electron": "^26.1.0",
+    "electron": "^26.2.4",
     "electron-builder": "^24.6.3"
   }
 }
