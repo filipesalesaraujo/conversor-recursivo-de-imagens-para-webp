@@ -45,7 +45,7 @@
   "dependencies": {
     "@electron/remote": "^2.0.1",
     "custom-electron-titlebar": "^4.2.7",
-    "sharp": "^0.30.0"
+    "sharp": "^0.32.6"
   },
   "devDependencies": {
     "archiver": "^6.0.0",
